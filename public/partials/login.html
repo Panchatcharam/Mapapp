@@ -1,0 +1,39 @@
+<div class="header">
+
+</div>
+<div layout="row" layout-align="center center"  style="min-height: 500px">
+<!-- Map and Side Panel -->
+<div class="row content">
+  <div class="col-md-7">
+      <h1>Welcome to this Fantastic Travel App</h1>
+  </div>
+
+    <!-- Side Panel -->
+    <div class="col-md-5">
+        <div class="panel panel-default">
+            <!-- Panel Title -->
+            <div class="panel-heading">
+                <h2 class="panel-title text-center"> Login or Register <span class="glyphicon glyphicon-map-marker"></span></h2>
+            </div>
+            <!-- Panel Body -->
+            <div class="panel-body">
+                <!-- Creates Form (novalidate disables HTML validation, Angular will control) -->
+                <form name ="login" novalidate>
+                    <div class="form-group">
+                        <label for="username">Username <span class="badge"></span></label>
+                        <input type="text" class="form-control" id="username" placeholder="Enter your Email Id here" ng-model="formData.username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="username">Password <span class="badge"></span></label>
+                        <input type="text" class="form-control" id="password" placeholder="Password" ng-model="formData.password" required>
+                    </div>
+
+                   <ul class="nav nav-pills pull-right">
+                     <li active> <button type="submit" class="btn btn-danger btn-block" ng-click="createUser()" ng-disabled="addForm.$invalid">Register</button> </li>
+                     <li active> <button type="submit" class="btn btn-danger btn-block" ng-click="validateUser()" ng-disabled="addForm.$invalid">Login</button> </li>
+                   </ul>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,63 @@
+<!-- Side Panel -->
+<div class="header">
+    <ul class="nav nav-pills pull-right">
+        <li active><a href="/#/login">Logout</a></li>
+    </ul>
+</div>
+
+<!-- Google Map -->
+<div class="col-md-7">
+    <div id="map" style="width:645px; height:645px"></div>
+</div>
+
+<div class="col-md-5">
+    <div class="panel panel-default">
+        <!-- Panel Title -->
+        <div class="panel-heading">
+        </div>
+        <!-- Panel Body -->
+        <div class="panel-body">
+            <!-- Creates Form (novalidate disables HTML validation, Angular will control) -->
+            <form name ="addForm" novalidate>
+                <div class="form-group">
+                    <label for="language">Description</label>
+                    <input type="text" class="form-control" id="language" placeholder="Enter your description here" ng-model="formData.favlang" required>
+                </div>
+                <div class="form-group">
+                    <label for="latitude">Latitude</label>
+                    <input type="text" class="form-control" id="latitude" value="39.500" ng-model="formData.latitude" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="longitude">Longitude</label>
+                    <input type="text" class="form-control" id="longitude" value="-98.350" ng-model="formData.longitude" readonly>
+                </div>
+
+                <label class="radio control-label">Would you like to recommend this place?</label>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="optionsRadios" id="radioyes" value="Yes" ng-model="formData.vote">
+                        Yes
+                    </label>
+                </div>
+                <div class="radio" required>
+                    <label>
+                        <input type="radio" name="optionsRadios" id="radioNo" value="No" ng-model="formData.vote">
+                        No
+                    </label>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block" ng-click="createnewlocation()" ng-disabled="addForm.$invalid">Add To My Wishlist</button>
+            </form>
+
+            </div>
+
+          <div class="panel-body">
+            <form name ="addForm" novalidate>
+              <button type="submit" class="btn btn-info btn-block" ng-click="showwishlist()" ng-enabled="addForm.$invalid">Show My Wishlist</button>
+              <button type="submit" class="btn btn-info btn-block" ng-click="showpopularlist()" ng-enabled="addForm.$invalid">Show Popular Locations</button>
+              <div class="panel-body" id="wishlist">
+            </form>
+          </div>
+        </div>
+    </div>
+</div>
