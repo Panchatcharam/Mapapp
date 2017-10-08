@@ -40,7 +40,8 @@ Now open a web browser and type "localhost:3000" on the address line and you wil
 
 
 # TODO
-* Add unit testframework
-* Show asterik while keying in password.
+* Add unit testframework such as Mocha and Karma
+* Show asterisk while keying in password.
 * Calculate the distance between your current location and most popular locations
 * Merge the locations which are with in 10km distance
+* Create an intance per user on the database
