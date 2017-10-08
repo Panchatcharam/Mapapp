@@ -7,8 +7,13 @@ The users could view about preferred location of the other users of this applica
 
 When user gets their wishlist which is basically the locations added as a favourite earlier will be highlighted in "YELLOW".
 
+# Dependencies
+1. node.js
+2. Angularjs
+3. MongoDB
 
-Cloe it to your local disk as below
+# Setup
+Clone it to your local disk as below
 #git clone https://github.com/Panchatcharam/Mapapp.git
 
 #cd Mapapp
@@ -25,16 +30,16 @@ Once above steps are complete, then run npm install as below to install all node
 
 Please make sure that mongodb service is up and running on your machine where you intend to run this server.
 
-
+# Start Server
 Now the environment is setup and now start the server as below,
-# node server.js
+#node server.js
 
 You will see "App listening on port 3000" if your server has sucessfully been started.
 
 Now open a web browser and type "localhost:3000" on the address line and you will be welcomed with the login/Register screen.
 
 
-TODO:
+# TODO
 * Add unit testframework
 * Show asterik while keying in password.
 * Calculate the distance between your current location and most popular locations
