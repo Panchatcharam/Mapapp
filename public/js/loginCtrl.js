@@ -10,7 +10,7 @@ loginCtrl.controller('loginCtrl', function($scope, $http, $rootScope, $window, g
         password: $scope.formData.password,
         favlang: "My first location",
         vote: 0,
-        location: [$scope.formData.latitude, $scope.formData.latitude]
+        location: [-95.56, 29.735]
       };
 
       queryBody = {
