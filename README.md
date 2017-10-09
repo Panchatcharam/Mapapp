@@ -31,7 +31,7 @@ Now run the following commands to grab dependencies from bower
 Once above steps are complete, then run npm install as below to install all node modules dependencies
 #### #npm install
 
-Please make sure that mongodb service is up and running on your machine where you intend to run this server.
+Please make sure that mongodb service is up and running on your machine where you intend to run this server. To install it on Ubuntu kindly follow the steps as outlined at https://docs.mongodb.com/tutorials/install-mongodb-on-ubuntu/
 
 # Start Server
 Now the environment is setup and now start the server as below,
@@ -44,7 +44,6 @@ Now open a web browser and type "localhost:3000" on the address line and you wil
 
 # TODO
 * Add unit testframework such as Mocha and Karma
-* Show asterisk while keying in password.
 * Calculate the distance between your current location and most popular locations
 * Merge the locations which are with in 10km distance
 * Create an intance per user on the database
