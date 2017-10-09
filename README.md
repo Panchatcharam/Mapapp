@@ -14,25 +14,28 @@ When user gets their wishlist which is basically the locations added as a favour
 
 # Setup
 Clone it to your local disk as below
-#git clone https://github.com/Panchatcharam/Mapapp.git
+#### #git clone https://github.com/Panchatcharam/Mapapp.git
 
-#cd Mapapp
+#### #cd Mapapp
 
 Now run the following commands to grab dependencies from bower
 
-#bower install angular-route#1.4.6
-#bower install angularjs-geolocation#0.1.1
-#bower install bootstrap#3.3.5
-#bower install modernizr#3.0.0
+#### #bower install angular-route#1.4.6
+
+#### #bower install angularjs-geolocation#0.1.1
+
+#### #bower install bootstrap#3.3.5
+
+#### #bower install modernizr#3.0.0
 
 Once above steps are complete, then run npm install as below to install all node modules dependencies
-#npm install
+#### #npm install
 
 Please make sure that mongodb service is up and running on your machine where you intend to run this server.
 
 # Start Server
 Now the environment is setup and now start the server as below,
-#node server.js
+#### #node server.js
 
 You will see "App listening on port 3000" if your server has sucessfully been started.
 
